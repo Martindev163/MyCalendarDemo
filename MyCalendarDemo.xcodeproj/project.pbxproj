@@ -15,6 +15,10 @@
 		23EDF2F11CFD79BC00855F80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EDF2EF1CFD79BC00855F80 /* LaunchScreen.storyboard */; };
 		23EDF2FC1CFD79BC00855F80 /* MyCalendarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EDF2FB1CFD79BC00855F80 /* MyCalendarDemoTests.m */; };
 		23EDF3071CFD79BC00855F80 /* MyCalendarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EDF3061CFD79BC00855F80 /* MyCalendarDemoUITests.m */; };
+		23EDF31A1CFD7A8600855F80 /* NSObject+CalendarSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EDF3191CFD7A8600855F80 /* NSObject+CalendarSet.m */; };
+		23EDF31E1CFD7B2E00855F80 /* CalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EDF31D1CFD7B2E00855F80 /* CalendarCollectionView.m */; };
+		23EDF3211CFD7B5900855F80 /* CalendarCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EDF3201CFD7B5900855F80 /* CalendarCVCell.m */; };
+		23EDF3241CFD96C700855F80 /* WeekCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EDF3231CFD96C700855F80 /* WeekCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		23EDF3021CFD79BC00855F80 /* MyCalendarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalendarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EDF3061CFD79BC00855F80 /* MyCalendarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCalendarDemoUITests.m; sourceTree = "<group>"; };
 		23EDF3081CFD79BC00855F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EDF3181CFD7A8600855F80 /* NSObject+CalendarSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CalendarSet.h"; sourceTree = "<group>"; };
+		23EDF3191CFD7A8600855F80 /* NSObject+CalendarSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CalendarSet.m"; sourceTree = "<group>"; };
+		23EDF31C1CFD7B2E00855F80 /* CalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCollectionView.h; sourceTree = "<group>"; };
+		23EDF31D1CFD7B2E00855F80 /* CalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCollectionView.m; sourceTree = "<group>"; };
+		23EDF31F1CFD7B5900855F80 /* CalendarCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCVCell.h; sourceTree = "<group>"; };
+		23EDF3201CFD7B5900855F80 /* CalendarCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCVCell.m; sourceTree = "<group>"; };
+		23EDF3221CFD96C700855F80 /* WeekCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekCollectionView.h; sourceTree = "<group>"; };
+		23EDF3231CFD96C700855F80 /* WeekCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +113,10 @@
 		23EDF2E01CFD79BC00855F80 /* MyCalendarDemo */ = {
 			isa = PBXGroup;
 			children = (
-				23EDF2E41CFD79BC00855F80 /* AppDelegate.h */,
-				23EDF2E51CFD79BC00855F80 /* AppDelegate.m */,
-				23EDF2E71CFD79BC00855F80 /* ViewController.h */,
-				23EDF2E81CFD79BC00855F80 /* ViewController.m */,
-				23EDF2EA1CFD79BC00855F80 /* Main.storyboard */,
-				23EDF2ED1CFD79BC00855F80 /* Assets.xcassets */,
-				23EDF2EF1CFD79BC00855F80 /* LaunchScreen.storyboard */,
-				23EDF2F21CFD79BC00855F80 /* Info.plist */,
+				23EDF3171CFD7A5400855F80 /* tool */,
+				23EDF3161CFD79D800855F80 /* controller */,
+				23EDF3151CFD79D200855F80 /* model */,
+				23EDF3141CFD79C500855F80 /* view */,
 				23EDF2E11CFD79BC00855F80 /* Supporting Files */,
 			);
 			path = MyCalendarDemo;
@@ -117,6 +125,11 @@
 		23EDF2E11CFD79BC00855F80 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23EDF2ED1CFD79BC00855F80 /* Assets.xcassets */,
+				23EDF2EF1CFD79BC00855F80 /* LaunchScreen.storyboard */,
+				23EDF2F21CFD79BC00855F80 /* Info.plist */,
+				23EDF2E41CFD79BC00855F80 /* AppDelegate.h */,
+				23EDF2E51CFD79BC00855F80 /* AppDelegate.m */,
 				23EDF2E21CFD79BC00855F80 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +151,45 @@
 				23EDF3081CFD79BC00855F80 /* Info.plist */,
 			);
 			path = MyCalendarDemoUITests;
+			sourceTree = "<group>";
+		};
+		23EDF3141CFD79C500855F80 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				23EDF31F1CFD7B5900855F80 /* CalendarCVCell.h */,
+				23EDF3201CFD7B5900855F80 /* CalendarCVCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		23EDF3151CFD79D200855F80 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		23EDF3161CFD79D800855F80 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				23EDF2E71CFD79BC00855F80 /* ViewController.h */,
+				23EDF2E81CFD79BC00855F80 /* ViewController.m */,
+				23EDF2EA1CFD79BC00855F80 /* Main.storyboard */,
+				23EDF31C1CFD7B2E00855F80 /* CalendarCollectionView.h */,
+				23EDF31D1CFD7B2E00855F80 /* CalendarCollectionView.m */,
+				23EDF3221CFD96C700855F80 /* WeekCollectionView.h */,
+				23EDF3231CFD96C700855F80 /* WeekCollectionView.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		23EDF3171CFD7A5400855F80 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				23EDF3181CFD7A8600855F80 /* NSObject+CalendarSet.h */,
+				23EDF3191CFD7A8600855F80 /* NSObject+CalendarSet.m */,
+			);
+			name = tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +324,11 @@
 			files = (
 				23EDF2E91CFD79BC00855F80 /* ViewController.m in Sources */,
 				23EDF2E61CFD79BC00855F80 /* AppDelegate.m in Sources */,
+				23EDF31E1CFD7B2E00855F80 /* CalendarCollectionView.m in Sources */,
+				23EDF31A1CFD7A8600855F80 /* NSObject+CalendarSet.m in Sources */,
+				23EDF3211CFD7B5900855F80 /* CalendarCVCell.m in Sources */,
 				23EDF2E31CFD79BC00855F80 /* main.m in Sources */,
+				23EDF3241CFD96C700855F80 /* WeekCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
